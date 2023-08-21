@@ -11,7 +11,8 @@ const questions = [
     "Please describe in detail how to use your project, and what it accomplishes. Include any command line parameters etc:",
     "Does your project have a license? type ONLY y for yes, or n for no:",
     "Does your project have any contributors? If so, list them here, separated by semicolons:",
-    "Describe any tests here, or describe in detail how to test your project/code:"
+    "Describe any tests here, or describe in detail how to test your project/code:",
+    "Specify a filename for your README, and it will be generated in the /generated_files/ folder. If left blank, the default name of README.md will be generated:"
 ];
 
 // TODO: Create a function to write README file
