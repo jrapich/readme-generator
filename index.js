@@ -58,8 +58,8 @@ const questions = [
     },
     {
         type:"input",
-        name:fileName,
-        message:"Specify a filename for your README, INCLUDING the .md file extension, and it will be generated in the /generated_files/ folder. If left blank, the default name of README.md will be generated:"
+        name:"fileName",
+        message:"Specify a filename for your README, and it will be generated in the /generated_files/ folder. If left blank, the default name of README will be generated:"
     },
     {
         type:"input",
@@ -84,9 +84,12 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers)=> {
         //pass the data from user questions to generateMarkdown, then write the readme file to /generated_files/
-        fileName = answers.fileName;
+        console.log(answers);
+        if (answers.fileName) {
+            fileName = `${answers.fileName}.md`;
+        }
         const readMeData = generateMarkdown(answers);
-        writeToFile(answers.title, readMeData);
+        writeToFile(fileName, readMeData);
     })
 }
 
