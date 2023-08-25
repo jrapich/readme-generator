@@ -16,17 +16,30 @@ function generateMarkdown(data) {
   const readMeData = `
   # ${data.title}
   
-  ## ${data.description}
+  ## Description
+  ${data.description}
 
-  ## ${data.info}
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Credits](#credits)
+  - [License](#license)
 
-  ## ${data.usage}
+  ## Installation
+  ${data.info}
 
-  ## ${data.tests}
+  ## Usage
+  ${data.usage}
 
-  ## ${data.contributors}
+  ## Tests
+  ${data.tests}
 
-  ## ${data.license}
+  ## Credits
+  ${data.contributors}
+
+  ## License
+  ${data.license}
 
   `;
   return readMeData;
