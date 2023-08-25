@@ -2,6 +2,7 @@
 const { default: inquirer } = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
+let fileName = "README.md";
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -58,7 +59,7 @@ const questions = [
     {
         type:"input",
         name:fileName,
-        message:"Specify a filename for your README, and it will be generated in the /generated_files/ folder. If left blank, the default name of README.md will be generated:"
+        message:"Specify a filename for your README, INCLUDING the .md file extension, and it will be generated in the /generated_files/ folder. If left blank, the default name of README.md will be generated:"
     },
     {
         type:"input",
@@ -83,6 +84,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers)=> {
         //pass the data from user questions to generateMarkdown, then write the readme file to /generated_files/
+        fileName = answers.fileName;
         const readMeData = generateMarkdown(answers);
         writeToFile(answers.title, readMeData);
     })
