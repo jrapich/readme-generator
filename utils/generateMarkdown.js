@@ -38,8 +38,13 @@ function generateMarkdown(data) {
   ## Credits
   ${data.contributors}
 
+  ## Questions?
+  ${data.email}
+  https://www.github.com/${data.github}
+
   ## License
-  ${data.license}
+  This project protected under ${data.license}. 
+  All rights reserved.
 
   `;
   return readMeData;

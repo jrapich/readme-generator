@@ -54,6 +54,16 @@ const questions = [
         type:"input",
         name:fileName,
         message:"Specify a filename for your README, and it will be generated in the /generated_files/ folder. If left blank, the default name of README.md will be generated:"
+    },
+    {
+        type:"input",
+        name:"github",
+        message:"Enter your github username:"
+    },
+    {
+        type:"input",
+        name:"email",
+        message:"Enter your email address:"
     }
 ];
 
