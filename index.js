@@ -26,9 +26,19 @@ const questions = [
         message:"Please describe in detail how to use your project, and what it accomplishes. Include any command line parameters etc:"
     },
     {
-        type:"input",
+        type:"list",
         name:"license",
-        message:"Does your project have a license? type ONLY y for yes, or n for no:"
+        message:"Please select which open source license your project is using:",
+        choices:[
+            "MIT License",
+            "GNU APGLv3",
+            "GNU GPLv3",
+            "GNU LGPLv3",
+            "Mozilla Public License 2.0",
+            "Apache License 2.0",
+            "Boost Software License 1.0",
+            "The Unilicense"
+        ]
     },
     {
         type:"input",
