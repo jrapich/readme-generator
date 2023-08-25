@@ -1,6 +1,7 @@
 const badgeMaker = require("./badgeMaker");
 
-// TODO: Create a function to generate markdown for README
+//this function will take the answers object provided by inquirer.prompt
+//and generate Markdown for the readme with the information provided
 function generateMarkdown(data) {
   
   const readMeData = `
@@ -49,4 +50,5 @@ function generateMarkdown(data) {
   return readMeData;
 }
 
+//export function to other parts of the application
 module.exports = generateMarkdown;

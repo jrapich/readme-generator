@@ -5,8 +5,8 @@ function MakeBadgeFormat(label, message, color) {
   this.color=color;
 }
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//renders a badge containing license information, function provided by badge-maker package
+//otherwise returns an empty string if no license provided
 function renderLicenseBadge(license) {
   if (license) {
     const format = new MakeBadgeFormat("License", license, "blue");
@@ -16,4 +16,5 @@ function renderLicenseBadge(license) {
   }
 }
 
+//export it to the rest of the application
 module.exports = renderLicenseBadge;

@@ -1,10 +1,11 @@
-// TODO: Include packages needed for this application
+//packages and modules required for application
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
+//any global variables we may need
 let fileName = "README.md";
 
-// TODO: Create an array of questions for user input
+//An array of questionsto ask the user with inquirer.prompt
 const questions = [
     {
         type:"input",
@@ -73,17 +74,17 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+//a function that will write the readme file to /generated_files/
 function writeToFile(fileName, data) { 
     fs.writeFile(`./generated_files/${fileName}`, data, function () {
         console.log(`SUCCESS! README written to ./generated_files/${fileName}`);
     })
 }
 
-// TODO: Create a function to initialize app
+//application initialization
 function init() {
     inquirer.prompt(questions).then((answers)=> {
-        //pass the data from user questions to generateMarkdown, then write the readme file to /generated_files/
+        //pass the data from users answers to inquire.prompt, to generateMarkdown, then write the readme file to /generated_files/
         console.log(answers);
         if (answers.fileName) {
             fileName = `${answers.fileName}.md`;
