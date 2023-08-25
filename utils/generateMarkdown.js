@@ -53,8 +53,8 @@ function generateMarkdown(data) {
   https://www.github.com/${data.github}
 
   ## License
-  This project protected under ${data.license}. 
-  All rights reserved.
+  This project protected under ${data.license}.
+  All rights reserved. See /LICENSE for more information.
 
   `;
   return readMeData;
