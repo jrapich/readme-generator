@@ -24,6 +24,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Tests](#tests)
   - [Credits](#credits)
+  - [Questions](#questions?)
   - [License](#license)
 
   ## Installation
@@ -39,7 +40,7 @@ function generateMarkdown(data) {
   ${data.contributors}
 
   ## Questions?
-  ${data.email}
+  Any further questions, comments, or bug reports, can be sent to me at ${data.email}
   https://www.github.com/${data.github}
 
   ## License
