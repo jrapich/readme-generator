@@ -24,6 +24,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Tests](#tests)
   - [Credits](#credits)
+  - [Contributing](#contributing)
   - [Questions](#questions?)
   - [License](#license)
 
@@ -40,6 +41,10 @@ function generateMarkdown(data) {
 
   ## Credits
   ${data.contributors}
+
+  ## Contributing
+  How to contribute:
+  Please reach out to me at ${data.email} or make a pull request at [${data.repo}](${data.repo})
 
   ## Questions?
   Any further questions, comments, or bug reports, can be sent to me at ${data.email}
