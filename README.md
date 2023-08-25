@@ -45,6 +45,8 @@
 
   Link to project repository: [https://github.com/jrapich/readme-generator](https://github.com/jrapich/readme-generator)
 
+  There is an example readme generated with this project to `/generated_files/EXAMPLE.md`
+
   ## Tests
   none needed
 
