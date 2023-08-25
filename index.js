@@ -26,6 +26,11 @@ const questions = [
         message:"Please describe in detail how to use your project, and what it accomplishes. Include any command line parameters etc:"
     },
     {
+        type:"input",
+        name:"repo",
+        message:"Enter the link to your project repository:"
+    },  
+    {
         type:"list",
         name:"license",
         message:"Please select which open source license your project is using:",

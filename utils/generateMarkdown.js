@@ -33,6 +33,8 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  Link to project repository: [${data.repo}](${data.repo})
+
   ## Tests
   ${data.tests}
 
