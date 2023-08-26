@@ -26,7 +26,8 @@
   fs v0.0.1-security   
   badge-maker v3.3.1   
   
-  With Node installed, navigate to the application folder and install these packages by simply running "npm install"
+  With Node installed, navigate to the application folder and install these packages by simply running:
+  `npm install`
 
   ## Usage
   To run this script, run it with node:  
@@ -51,6 +52,9 @@
   none needed
 
   ## Credits
+  This project is based on the following source/starter code provided from this repository:
+  [https://github.com/coding-boot-camp/potential-enigma](https://github.com/coding-boot-camp/potential-enigma)
+
   no other contributors
 
   ## Contributing
