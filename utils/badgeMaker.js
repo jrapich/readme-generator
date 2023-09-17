@@ -16,5 +16,14 @@ function renderLicenseBadge(license) {
   }
 }
 
+function renderOtherBadge(package, version){
+  if (package && version) {
+    const format = new MakeBadgeFormat(package, version, "blue");
+    return makeBadge(format);
+  } else {
+    return "";
+  }
+}
+
 //export it to the rest of the application
-module.exports = renderLicenseBadge;
+module.exports = {renderLicenseBadge, renderOtherBadge};
