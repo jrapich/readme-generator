@@ -19,7 +19,9 @@ function renderLicenseBadge(license) {
 function renderPackageVersion(package, version){
   if (package && version) {
     const format = new MakeBadgeFormat(package, version, "blue");
-    return makeBadge(format);
+    return new Promise((resolve) => {
+      resolve(makeBadge(format));
+    })
   } else {
     return "";
   }
