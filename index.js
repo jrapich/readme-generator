@@ -5,7 +5,7 @@ const fs = require("fs");
 //any global variables we may need
 let fileName = "README.md";
 
-//An array of questionsto ask the user with inquirer.prompt
+//An array of questions to ask the user with inquirer.prompt
 const questions = [
     {
         type:"input",
