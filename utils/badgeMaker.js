@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-function renderOtherBadge(package, version){
+function renderPackageVersion(package, version){
   if (package && version) {
     const format = new MakeBadgeFormat(package, version, "blue");
     return makeBadge(format);
@@ -26,4 +26,4 @@ function renderOtherBadge(package, version){
 }
 
 //export it to the rest of the application
-module.exports = {renderLicenseBadge, renderOtherBadge};
+module.exports = {renderLicenseBadge, renderPackageVersion};
