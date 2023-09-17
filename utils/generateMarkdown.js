@@ -1,4 +1,4 @@
-const badgeMaker = require("./badgeMaker");
+const {renderLicenseBadge} = require("./badgeMaker");
 
 //this function will take the answers object provided by inquirer.prompt
 //and generate Markdown for the readme with the information provided
@@ -6,7 +6,7 @@ function generateMarkdown(data) {
   
   const readMeData = `
   # ${data.title}
-  ${badgeMaker(data.license)}
+  ${renderLicenseBadge(data.license)}
   
   ## Description
   ${data.description}
